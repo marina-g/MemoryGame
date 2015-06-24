@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>Memory Game</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+			<img src="images/menu.png" id="menuIcon">
+			<div id="title">
+				<h1>The Fruits and Veggies Memory Game</h1>
+			</div>
+		</header>
+			<div id="menu">
+				<ul>
+					<li>Instructions</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div id="menuOverlay">
+				<div id="instructions" class="menuPages">
+					<img src="images/close.png">
+					<h2>Instructions</h2>
+					<p>This is a time limited one player memory game, where a player is shown a number of images faced down. Only a set of 2 images can be opened at a time and if they are the same they will stay open, if not they will flip back. The goal is to guess the pairs in as less time and tries as possible, where one try is considered one opened set of images.</p>
+					<p>The score is determined by the number of matched pairs, the number of tries and the time left after matching all the images on the board.</p>
+				</div>
+				<div id="about" class="menuPages">
+					<img src="images/close.png">
+					<h2>About</h2>
+					<p>The Fruits and Veggies Memory Game was designed and developed by Marina Giovska in January 2015.</p>
+					<p>If you have any questions, comments or suggestions feel free to <span id="about_contact">contact me here</span>.</p>
+				</div>
+				<div id="contact" class="menuPages">
+					<img src="images/close.png">
+					<h2>Contact</h2>
+					<form method="get">
+						<label for="user_name">Name</label><br />
+						<input type="text" name="user_name"><br />
+						<label for="user_email">E-mail</label><br />
+						<input type="email" name="user_email"><br />
+						<label for="user_comment">Comment</label><br />
+						<textarea cols="35" rows="8" name="user_comment"></textarea><br/>
+						<input type="submit" value="Send">
+					</form>
+				</div>
+			</div>
+			<div id="levels">
+				<div id="startGame" class="levelButtons">START</div>
+				<h2>OR <br/> Choose Level</h2>
+				<div id="buttonEasy" class="levelButtons">Level 1<br/> Easy</div>
+				<div id="buttonNormal" class="levelButtons">Level 2 Normal</div>
+				<div id="buttonAdvanced" class="levelButtons">Level 3 Advanced</div>
+				<div id="buttonDifficult" class="levelButtons">Level 4 Difficult</div>
+			</div>
+			<div id="scoreContainer">
+				<div id="score">SCORE<br/><span>0</span></div>
+				<div id="bestScore">BEST SCORE<br/><span>0</span></div>
+				<div id="openedPairs">TRIES<br/><span>0</span></div>
+				<div id="timer">TIMER<br/><span>0</span></div>
+			</div>
+			<div id="boards">
+				<div id="boardEasy"></div>
+				<div id="boardNormal"></div>
+				<div id="boardAdvanced"></div>
+				<div id="boardDifficult"></div>
+			</div>
+			<footer>
+				<div class="footerContent">
+				Copyright &copy;
+				<time datetime="2015-01-12">2015</time>
+				</div>
+			</footer>
+		</div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+	</body>
+</html>
